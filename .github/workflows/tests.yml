@@ -33,4 +33,5 @@ jobs:
         run: ruff check .
 
       - name: Run tests
-        run: pytest -q python_helper_bot/tests --cov=python_helper_bot --cov-report=term-missing
+        run: pytest -q tests --cov=.
+        working-directory: python_helper_bot
